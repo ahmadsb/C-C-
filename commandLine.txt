@@ -1,0 +1,1 @@
+gcc -Wall -ansi -O0 -pedantic -Werror  mutex.c -lpthread -o run

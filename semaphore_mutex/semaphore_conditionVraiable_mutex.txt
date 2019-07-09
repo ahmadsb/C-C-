@@ -1,0 +1,15 @@
+if the data is read only no need mutex 
+I have "ahmad ..."
+don't important who read first or second 
+
+the problem just in write ' change data'
+
+ ===================================================
+semaphore shared buffer push/pop
+semaphore == condtion variable
+=================================================
+mutex is critical section , shard memory to threads i.g global variable
+=====================
+
+semaphore --> mutex
+mutex --> condtion_variable

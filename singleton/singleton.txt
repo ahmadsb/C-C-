@@ -1,0 +1,34 @@
+
+singleton is class to create once instance  to use global variable
+===========================================
+
+why no good to use global variable?
+
+1. is accessible to all functions/outside throughout the program
+2. encapsulation
+3. namespace same name
+4.?
+ ========================================
+
+singleton --> i.g => logger : to allow all to print
+
+========================
+
+if I have two or more global variable and one variable uses in other variable 
+how order init. ?
+1) possible to create class globale is doing all init.
+2) local static variable 
+
+i.g ->
+Conf& getCon(){
+	static Conf theConf;
+	return theConf;
+}
+Logger::logger(){ m_path(getConf().getValue('');}
+
+Logger& getLoger(){
+	static logger log;
+	return log;
+}
+
+

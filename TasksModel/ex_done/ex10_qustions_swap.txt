@@ -1,0 +1,8 @@
+Will your swap() function from the former task compile in C++?
+yes
+
+Will it be possible to use it in C++?
+yes , Because C-Blass Blas is a C ++ wrapper
+
+Will it do what it should in C++?
+No

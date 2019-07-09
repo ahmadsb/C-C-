@@ -1,0 +1,18 @@
+what's the problem of smartPtr?
+
+opreator= assignment / copy ctor --> provide instance other with same pointer
+and if we do delete on pointer as the else pointer also delete
+and this problem maybe the second pointer is used after the delete
+this provides delete((delete(add))) dobule detele this problem --> returens undefined 
+
+// =============================//
+what is smartPtr?
+
+smartPtr --> is delete the pointer if there is i.g. exception 
+ myClass obj = new Obj();
+ obj.foo(); throw exception 
+delete(obj)
+
+// os smartPtr is responsible for destroy the pointer
+UniquePtr<int> p = UniquePtr(new int ())
+if there is except so is responsible for destroy the pointer

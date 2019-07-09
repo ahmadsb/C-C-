@@ -1,0 +1,18 @@
+#include "stack.h"
+#include <gtest/gtest.h>
+
+int main(int argc, char* argv[])
+{
+    testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+}
+To compile you can use this convenient makefile. To compile and run (on compilation success only) use:
+
+make run
+If you prefer manual compilation use flags: -lgtest -lgtest_main -pthread
+Example:
+
+g++ -ansi -pedantic -Wall -Wconversion  test_stack.cpp -lgtest -lgtest_main -pthread -o testStack
+Run:
+
+./testStack

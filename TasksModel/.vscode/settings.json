@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "xmemory0": "c",
+        "string.h": "c",
+        "stdio.h": "c"
+    }
+}

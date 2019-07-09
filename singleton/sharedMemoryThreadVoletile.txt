@@ -1,0 +1,19 @@
+compiler not work accouring order -->
+
+1.operator new 
+2.ctor 
+3.assignment
+
+compiler does optimision .
+
+key work --> in c and cpp there is volatile
+volatile is key word in c/cpp that tell to compiler that don't work optimision
+but the problem is that volatile is doing after constructor like const
+so, this no help us.
+
+the solution is memory brairrs
+
+============================
+atomic operations
+__sync_fetch_or // instruction starts with __sync..
+
